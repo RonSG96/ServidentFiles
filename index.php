@@ -72,8 +72,8 @@
                     </div>
                 </form>
 
-                <a href="https://github.com/amnersaucedososa">Se te olvido la contraseña?</a><br>
-                <a href="register.php" class="text-center">Registrarme</a>
+                <!-- <a href="https://github.com/amnersaucedososa">Se te olvido la contraseña?</a><br> -->
+                <!-- <a href="register.php" class="text-center">Registrarme</a> -->
 
             </div><!-- /.login-box-body -->
         </div><!-- /.login-box -->

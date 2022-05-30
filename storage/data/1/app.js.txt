@@ -1,0 +1,54 @@
+const fs = require ('fs')
+const ora = require ('ora')
+const chalk = require ('chalk')
+const {Client} = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+
+const SESSION_FILE_PATH = './session.json';
+
+let client;
+let sessionData;
+
+const withSession = () => {
+    //Si existe cargamos el archivo con las credenciales
+    const spinner = ora (`Cargando ${chalk.yellow ('Validandno session con whatsapp...')}`);
+    sessionData = require (SESSION_FILE_PATH);
+    spinner.start();
+    client = new client({
+        session:sessionData
+    })
+
+    client.on ('ready', ( ) => {
+        console.log('CLiente is ready')
+        spinner.stop();
+    })
+}
+
+/**
+ * Esta funcion Genera el QRCODE
+ */
+const withOutSession = () => {
+    console.log('No tenemos session guardada');
+    client = new Client ();
+    client.on ('qr', qr => {
+        qrcode.generate(qr, {small: true});
+    });
+
+    client.on('authenticated', (session) => {
+        // Guardamos credenciales de session para usar luego
+        sessionData = session;
+        fs.writeFile(SESSION_FILE_PATH, JSON.stringify(session), (err) => {
+            if (err){
+                console.log(err);
+            }
+        });
+    });
+
+    client.initialize();
+}
+
+/** 
+ * 
+ */
+
+(fs.existsSync(SESSION_FILE_PATH))? withSession() : withOutSession();

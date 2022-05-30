@@ -28,7 +28,7 @@
                             <h3><?php echo mysqli_num_rows($count_files); ?></h3>
                             <p>Archivos</p>
                         </div>
-                        <a href="#" class="small-box-footer">Más info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="myfiles.pgp" class="small-box-footer">Más info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div><!-- ./col -->
                 <div class="col-lg-3 col-xs-6">

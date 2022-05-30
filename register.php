@@ -1,9 +1,12 @@
+<?php 
+    $active6="active";
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>.:Registrarme:.</title>
+    <title>.:Registro:.</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -22,11 +25,15 @@
 <body class="hold-transition register-page">
     <div class="register-box">
         <div id="result"></div>
+        <div class="text-center">
+                <img class="img" src="images/Servident/logo1.png" height="35%"  width="35%" >
+                    </div>
         <div class="register-logo">
-            <a href="#"><b>SIS</b>SHARE</a>
+            <a href="#"><b>SERVIDENT</b>FILES</a>
         </div>
+        
         <div class="register-box-body">
-            <p class="login-box-msg">Nuevo Usuario</p>
+            <p class="login-box-msg"></p>
             <form method="post" id="add" name="add">
                 <div class="form-group has-feedback">
                     <input type="text" name="fullname" class="form-control" placeholder="Nombre y apellidos" required>
@@ -40,12 +47,20 @@
                     <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
+                <label>Rol de usuario</label>
+                                    <select class="form-control select2" name="folder_id">
+                                      <option value="" selected="selected">---Seleciona el rol para el usuario---</option>
+                                      <?php foreach($folders as $fld ):?>
+                                      <option value="<?php echo $fld['id'];?>"><?php echo $fld['filename'];?></option>
+                                      <?php endforeach; ?>
+                                    </select>
+                
                 <p class="text-muted text-right">campos obligatorios* </p>
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
                             <label>
-                                <input type="checkbox" required> Acepto los <a href="https://github.com/amnersaucedososa">terminos</a>
+                                <!-- <input type="checkbox" required> Acepto los <a href="https://github.com/amnersaucedososa">terminos</a> -->
                             </label>
                         </div>
                     </div><!-- /.col -->
@@ -55,7 +70,9 @@
                 </div>
             </form>
 
-            <a href="index.php" class="text-center">Iniciar Session</a>
+            <!-- <a href="index.php" class="text-center">Iniciar Session</a> -->
+            <br>
+            <a href="home.php" class="text-center">Volver</a>
 
         </div><!-- /.form-box -->
     </div><!-- /.register-box -->

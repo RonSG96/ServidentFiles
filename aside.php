@@ -13,7 +13,7 @@
                 <li class="header">NAVEGACIÓN</li>
 
                 <li class="<?php if(isset($active1)){echo $active1;}?>">
-                    <a href="home.php"><i class="fa fa-user"></i> <span>Mi perfil</span></a>
+                    <a href="home.php"><i class="fa fa-home"></i> <span>Mi perfil</span></a>
                 </li>
 
                 <li class="<?php if(isset($active2)){echo $active2;}?>">
@@ -31,10 +31,17 @@
                 <li class="<?php if(isset($active5)){echo $active5;}?>">
                     <a href="newfile.php"><i class="fa fa-upload"></i> <span>Nuevo Archivo</span></a>
                 </li>
-
-                <!-- <li class="<?php if(isset($active6)){echo $active6;}?>"> -->
-                    <!-- <a href="about.php"><i class="fa fa-smile-o"></i> <span>Acerca del autor</span></a> -->
-                <!-- </li> -->
+           
+                <li class="<?php if(isset($active7)){echo $active7;}?>">
+                    <a href="" target=""><i class="fa fa-user"></i> <span>Informes</span></a>
+                </li>
+                <li class="<?php if(isset($active6)){echo $active6;}?>">
+                    <a href="register.php" target=""><i class="fa fa-user"></i> <span>Registro de usuarios</span></a>
+                    <!-- <ul>Ver usuarios</ul> -->
+                </li>
+                <li class="<?php if(isset($active8)){echo $active8;}?>">
+                    <a href="" target=""><i class="fa fa-user"></i> <span>Ver usuarios</span></a>
+                </li>
 
             </ul>
         </section><!-- /.sidebar -->

@@ -141,7 +141,7 @@ else if ($go==false && !$is_owner){
                     <div class="box box-success"><!-- small box -->
                         <div class="box-header">
                             <i class="fa fa-comments-o"></i>
-                            <h3 class="box-title">Comentarios (<?php echo $count?>)</h3>
+                            <h3 class="box-title">Diagnostico (<?php echo $count?>)</h3>
                         </div>
                         <?php if($count>0):?>
                         <div class="box-body chat" id="chat-box">

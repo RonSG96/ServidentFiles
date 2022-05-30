@@ -42,7 +42,7 @@
                             <div class="box-body">
                                 <div class="form-group">
                                     <label>Descripción</label>
-                                    <textarea name="description" class="form-control" rows="3" placeholder="E.j: Mi primera foto con mi novia!..."></textarea>
+                                    <textarea name="description" class="form-control" rows="3" placeholder="Descripcion de la imagen..."></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Carpeta</label>

@@ -3216,9 +3216,9 @@ class upload {
             case 'g':
                 $size *= 1024;
             case 'm':
-                $size *= 1024;
+                $size *= 5024;
             case 'k':
-                $size *= 1024;
+                $size *= 10024;
         }
         return $size;
     }
