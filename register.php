@@ -72,7 +72,7 @@
 
             <!-- <a href="index.php" class="text-center">Iniciar Session</a> -->
             <br>
-            <a href="home.php" class="text-center">Volver</a>
+            <a href="home.php" class="btn btn-success">Volver</a>
 
         </div><!-- /.form-box -->
     </div><!-- /.register-box -->

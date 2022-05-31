@@ -69,7 +69,7 @@
                     <div class="small-box bg-red"><!-- small box -->
                         <div class="inner">
                           <h3><?php echo mysqli_num_rows($count_comments); ?></h3>
-                          <p>Comentarios</p>
+                          <p>Diagnosticos</p>
                         </div>
                         <a href="#" class="small-box-footer">Más info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>

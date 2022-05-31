@@ -31,16 +31,16 @@
                 <li class="<?php if(isset($active5)){echo $active5;}?>">
                     <a href="newfile.php"><i class="fa fa-upload"></i> <span>Nuevo Archivo</span></a>
                 </li>
-           
-                <li class="<?php if(isset($active7)){echo $active7;}?>">
-                    <a href="" target=""><i class="fa fa-user"></i> <span>Informes</span></a>
-                </li>
                 <li class="<?php if(isset($active6)){echo $active6;}?>">
                     <a href="register.php" target=""><i class="fa fa-user"></i> <span>Registro de usuarios</span></a>
                     <!-- <ul>Ver usuarios</ul> -->
                 </li>
-                <li class="<?php if(isset($active8)){echo $active8;}?>">
+                <li class="<?php if(isset($active7)){echo $active7;}?>">
                     <a href="" target=""><i class="fa fa-user"></i> <span>Ver usuarios</span></a>
+                </li>
+                
+                <li class="<?php if(isset($active8)){echo $active8;}?>">
+                    <a href="index.html" target=""><i class="fa fa-user"></i> <span class="fas fa-arrow">Formato 12</span></a>
                 </li>
 
             </ul>
