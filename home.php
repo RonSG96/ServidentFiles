@@ -3,6 +3,7 @@
     include "head.php"; 
     include "header.php"; 
     include "aside.php"; 
+    // include "register.php";
 
 
     $count_files = mysqli_query($con, "select * from file");

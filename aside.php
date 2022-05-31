@@ -40,7 +40,7 @@
                 </li>
                 
                 <li class="<?php if(isset($active8)){echo $active8;}?>">
-                    <a href="index.html" target=""><i class="fa fa-user"></i> <span class="fas fa-arrow">Formato 12</span></a>
+                    <a href="index.html" target=""><i class="fa fa-user"></i> <span class="fas fa-arrow">Formulario 12</span></a>
                 </li>
 
             </ul>
