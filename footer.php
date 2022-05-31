@@ -3,7 +3,7 @@
             <div class="pull-right hidden-xs">
               <b>Version</b> 1.0 BETASERVIDENT
             </div>
-            <strong>Copyright &copy;  <a target="_blank" href="#">Ing. Gonzalo Sánchez</a></strong>
+            <strong>Copyright &copy;  <a target="_blank" href="https://miportafolioronsg.web.app/">Ing. Gonzalo Sánchez</a></strong>
         </footer><!-- ./wrapper -->
     </div>
 
