@@ -1,7 +1,7 @@
 <?php
 	include "../config/config.php";
 
-	// Count Download by abisoft https://github.com/amnersaucedososa
+	// Count Download 
 		$id=$_GET["id"];
 	   	$count=$_GET["count"]+1;
 	   	$sql = mysqli_query($con,"UPDATE file SET download ='.$count.'WHERE id ='".$id."' ");

@@ -194,7 +194,7 @@
                                                             echo ($fsize/1000*1000*1000)."Gb";
                                                         }
                                                         else if($fsize>1000*1000){
-                                                            echo ($fsize/1000*1000)."Mb";
+                                                            echo ($fsize/1000000)."Mb";
                                                         }
                                                         else if($fsize>1000){
                                                             echo ($fsize/1000)."Kb";
