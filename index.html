@@ -21,18 +21,21 @@
                 <h3>Formato informe y conclusiones</h3>
                 <hr>
                 <form id="form">
-                        <div class="row mb-">
+                    <div class="row mb-">
                         <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="Informe" >Informe</label>
-                            <textarea type = "text" class="form-control" id="informe" rows="4" cols="210" ></textarea>
+                            <div class="form-group">
+                                <label for="Informe">Informe</label>
+                                <textarea type="text" class="form-control" id="informe" rows="4" cols="210"></textarea>
+                                <hr>
+                                <label for="conclusion">Conclusion</label>
+                                <textarea type="text" class="form-control" id="conclusion" rows="4"
+                                    cols="20"></textarea>
+                            </div>
                             <hr>
-                            <label for="conclusion">Conclusion</label>
-                            <textarea type="text" class="form-control" id="conclusion"  rows="4" cols="20" ></textarea>
-                        </div><hr>
+                        </div>
                     </div>
-                    </div>
-                    <h6>Seleccionar Imagenologo</h6><hr>
+                    <h6>Seleccionar Imagenologo</h6>
+                    <hr>
                     <div class="mb-3">
                         <label for="curso" class="form-label">¿Quién realizó el proceso?</label>
                         <select class="form-control" id="curso">
@@ -41,18 +44,46 @@
                             <option value="Doc2">Juanito
                             </option>
                         </select>
-                    </div><hr><br>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="curso" class="form-label">¿Quién realizó el informe?</label>
+                        <select class="form-control" id="curso">
+                            <option value="">Seleccione al medico...</option>
+                            <option value="Doc1">Pepito</option>
+                            <option value="Doc2">Juanito
+                            </option>
+                        </select>
+                    </div>
+                    <hr><br>
                     <h6>Diagnostico de imagenologia</h6>
                     <hr>
-                       <th>Diagnostico CIE 10</th> <hr>
-                       <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_1_text" name="informe-0-diagnostico_img_1_text" placeholder="Buscar Diagnostico..." type="text" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><hr>
-                       <input class="typeahead form-control input-sm tt-input" id="id_informe-0-diagnostico_img_2_text" name="informe-0-diagnostico_img_2_text" placeholder="Buscar Diagnostico..." type="text" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><hr>
-                       <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_3_text" name="informe-0-diagnostico_img_3_text" placeholder="Buscar Diagnostico..." type="text" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><hr>
-                       <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_4_text" name="informe-0-diagnostico_img_4_text" placeholder="Buscar Diagnostico..." type="text" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><hr>
-                       
-                      
+                    <th>Diagnostico CIE 10</th>
+                    <hr>
+                    <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_1_text"
+                        name="informe-0-diagnostico_img_1_text" placeholder="Buscar Diagnostico..." type="text"
+                        autocomplete="off" spellcheck="false" dir="auto"
+                        style="position: relative; horizontal-align: top; background-color: transparent;">
+                    <hr>
+                    <input class="typeahead form-control input-sm tt-input" id="id_informe-0-diagnostico_img_2_text"
+                        name="informe-0-diagnostico_img_2_text" placeholder="Buscar Diagnostico..." type="text"
+                        autocomplete="off" spellcheck="false" dir="auto"
+                        style="position: relative; vertical-align: top; background-color: transparent;">
+                    <hr>
+                    <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_3_text"
+                        name="informe-0-diagnostico_img_3_text" placeholder="Buscar Diagnostico..." type="text"
+                        autocomplete="off" spellcheck="false" dir="auto"
+                        style="position: relative; vertical-align: top; background-color: transparent;">
+                    <hr>
+                    <input class="typeahead  form-control input-sm tt-input" id="id_informe-0-diagnostico_img_4_text"
+                        name="informe-0-diagnostico_img_4_text" placeholder="Buscar Diagnostico..." type="text"
+                        autocomplete="off" spellcheck="false" dir="auto"
+                        style="position: relative; vertical-align: top; background-color: transparent;">
+                    <hr>
 
-                    
+
+
+
                     <span class="d-block pb-2">Firma digital aqui</span>
                     <div class="signature mb-2" style="width: 100%; height: 200px;">
                         <canvas id="signature-canvas"
@@ -67,7 +98,7 @@
 
     </div>
 
-  
+
 </body>
 
 </html>
