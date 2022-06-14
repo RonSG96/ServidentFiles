@@ -48,7 +48,7 @@
             <li class="<?php if (isset($active6)) {
                             echo $active6;
                         } ?>">
-                <a href="register.php" target=""><i class="fa fa-user"></i> <span>Registro de usuarios</span></a>
+                <a href="register.php" target="_blank"><i class="fa fa-user"></i> <span>Registro de usuarios</span></a>
                 <!-- <ul>Ver usuarios</ul> -->
             </li>
             <li class="<?php if (isset($active7)) {

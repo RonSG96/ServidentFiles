@@ -25,9 +25,6 @@ $(function() {
     });
 });
 </script>
-<a
-    href="weasis://%24dicom%3Ars%20--url%20%22https%3A%2F%2Fdemo.orthanc-server.com%2Fdicom-web%22%20-r%20%22patientID%3Dozp00SjY2xG%22">prueba
-    dicom</a>
 
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.js"></script>
